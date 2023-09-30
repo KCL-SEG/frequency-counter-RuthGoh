@@ -3,5 +3,10 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    for x in items:
+        s = str(x)
+        if s in frequencies:
+            frequencies[s] += 1
+        else:
+            frequencies[s] = 1
     return frequencies
